@@ -20,7 +20,7 @@ node {
     }
  
     stage ('Test') {
-        rtMaven.run pom: 'maven-example/pom.xml', goals: 'clean test'
+        rtMaven.run pom: 'pom.xml', goals: 'clean test'
     }
         
     stage ('Install') {
